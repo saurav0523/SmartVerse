@@ -18,6 +18,8 @@ web-build/
 .DS_Store
 
 # Native
+android/
+ios/
 *.ipa
 *.apk
 

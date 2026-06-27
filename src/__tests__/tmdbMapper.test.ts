@@ -62,7 +62,7 @@ describe("tmdbMapper - mapTMDBToContentItem", () => {
     expect(mapped.tags).toEqual(["Featured"]);
     expect(mapped.rating).toBe(0.0);
     expect(mapped.releaseYear).toBe(2024);
-    expect(mapped.durationMins).toBe(45); // Fallback for series is 45 mins
+    expect(mapped.durationMins).toBe(45); 
     expect(mapped.type).toBe("Series");
     expect(mapped.language).toBe("EN");
     expect(mapped.isNew).toBe(true);

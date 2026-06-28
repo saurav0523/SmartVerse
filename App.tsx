@@ -32,14 +32,6 @@ export default function App() {
   const paperTheme = isDark ? paperDarkTheme : paperLightTheme;
   const navTheme = isDark ? DarkTheme : DefaultTheme;
 
-  if (!fontsLoaded) {
-    return (
-      <View style={{ flex: 1, backgroundColor: "#0B0B12", justifyContent: "center", alignItems: "center" }}>
-        <ActivityIndicator size="large" color="#3B82F6" />
-      </View>
-    );
-  }
-
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>

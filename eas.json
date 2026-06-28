@@ -19,6 +19,9 @@
       }
     },
     "production": {
+      "android": {
+        "buildType": "apk"
+      },
       "env": {
         "EXPO_PUBLIC_RAPIDAPI_KEY": "212ceb65a9msh577b2b0441047a9p123b03jsn6d0635a3a862",
         "EXPO_PUBLIC_RAPIDAPI_HOST": "streaming-availability.p.rapidapi.com",

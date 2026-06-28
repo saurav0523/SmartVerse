@@ -14,7 +14,7 @@ const ErrorState = ({ message, onRetry }: Props) => {
   const { colors } = useAppTheme();
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.background }]}>
       <MaterialCommunityIcons name="wifi-off" size={48} color={colors.textMuted} />
       <Text style={[styles.title, { color: colors.text }]}>Something went wrong</Text>
       <Text style={[styles.subtitle, { color: colors.textMuted }]}>

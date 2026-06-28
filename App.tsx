@@ -12,6 +12,7 @@ import {
   Outfit_700Bold,
   Outfit_800ExtraBold,
 } from "@expo-google-fonts/outfit";
+import { View, ActivityIndicator } from "react-native";
 import RootNavigator from "./src/navigation/RootNavigator";
 import { paperDarkTheme, paperLightTheme } from "./src/theme/paperTheme";
 import useThemeStore from "./src/stores/useThemeStore";
@@ -32,7 +33,11 @@ export default function App() {
   const navTheme = isDark ? DarkTheme : DefaultTheme;
 
   if (!fontsLoaded) {
-    return null;
+    return (
+      <View style={{ flex: 1, backgroundColor: "#0B0B12", justifyContent: "center", alignItems: "center" }}>
+        <ActivityIndicator size="large" color="#3B82F6" />
+      </View>
+    );
   }
 
   return (

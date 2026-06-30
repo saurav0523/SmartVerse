@@ -1,7 +1,3 @@
-/**
- * Centralized, validated, and typed environment configuration.
- * Prevents raw access to process.env and guarantees presence of required keys.
- */
 
 export interface EnvConfig {
   RAPIDAPI_KEY: string;
@@ -37,7 +33,6 @@ const validateEnv = (): EnvConfig => {
       .map((v) => ` - ${v}`)
       .join("\n")}\n\nPlease check your .env file or build settings.\n`;
     
-    // Safely check if __DEV__ is defined
     const isDevMode = typeof __DEV__ !== "undefined" ? __DEV__ : true;
 
     if (isDevMode) {

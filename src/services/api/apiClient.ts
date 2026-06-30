@@ -1,6 +1,8 @@
-const API_KEY = process.env.EXPO_PUBLIC_RAPIDAPI_KEY;
-const API_HOST = process.env.EXPO_PUBLIC_RAPIDAPI_HOST;
-const BASE_URL = process.env.EXPO_PUBLIC_RAPIDAPI_URL;
+import { env } from "../../config/env";
+
+const API_KEY = env.RAPIDAPI_KEY;
+const API_HOST = env.RAPIDAPI_HOST;
+const BASE_URL = env.RAPIDAPI_URL;
 
 export const tmdbRequest = async <T>(
   endpoint: string,

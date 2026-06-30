@@ -1,5 +1,7 @@
 
-export const BASE_URL = process.env.EXPO_PUBLIC_API_URL;
+import { env } from "../config/env";
+
+export const BASE_URL = env.API_URL;
 
 const ENDPOINTS = {
   HOME_FEED: "/feed/home",
